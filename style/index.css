@@ -28,9 +28,15 @@ article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
-body {
-	line-height: 1;
+/*General Styles*/
+html{
+    font-size:62.5%;
 }
+body {
+    line-height: 1;
+    
+}
+
 ol, ul {
 	list-style: none;
 }
@@ -64,6 +70,25 @@ h1, h2, h3, h4, h5 {
 
 p {
     line-height: 1.4;
+}
+/* Header Styles*/
+header {
+    width: 50%;
+    margin: 0 auto;
+   
+    
+}
+
+
+header nav{
+    width:100%;
+    display: flex;
+    justify-content:space-evenly;
+    flex-direction:row-reverse;
+    padding-bottom: 10%;
+}
+.header-image{
+    padding-bottom: 5% ;
 }
 
 .container {
