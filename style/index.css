@@ -73,24 +73,29 @@ p {
 }
 /* Header Styles*/
 header {
-    width: 50%;
+    width: 800px;
     margin: 0 auto;
    
     
 }
 
-
 header nav{
-    width:100%;
+    width:800px;
     display: flex;
     justify-content:space-evenly;
     flex-direction:row-reverse;
     padding-bottom: 10%;
+    font-color: black ;
 }
 .header-image{
     padding-bottom: 5% ;
 }
+#home {
+    display: flex;
+    align-items:flex-end;
 
+}
+/* End of Header */
 .container {
     width: 800px;
     margin: 0 auto;
@@ -200,24 +205,102 @@ footer nav a {
     text-decoration: none;
 }
 /* Container for flexboxes */
-.row {
-      display: flex;
-      flex-wrap: wrap;
-    }
-}
+
+
+
      /* On screens that are 500px wide or less, makea single column stacked. two columns to one*/
-     @media screen and (max-width: 500px) {
-          .row {
-            display: flex;
-            flex-direction: column;
-          }
+     @media(max-width : 500px)  {
+
+
+        header nav{
+            display:flex;
+            flex-direction:row;
+            width:62.5%;
         }
-    /* On screens that are 800px wide or less, go from eight columns to two columns */
-    @media screen and (max-width: 800px) {
-      .row {
-        display: flex;
-        flex-direction: column;
+        .header-image{
+            display:flex;
+            flex-direction:row;
+            width:62.5%;
+        }
+
+        .top-content{
+            display:flex;
+            flex-direction:column;
+           width:100%;
+        }
+        
+         .boxes{
+            display:flex;
+            flex-direction:column;
+            width:100%;
+        }
+        .bottom-content {
+            display: flex;
+            flex-wrap:wrap;
+            
+        }
+        #text-container{
+            display:flex;
+            flex-direction:wrap;
+        }
+
       }
-    }
+                                             
+    /* On screens that are 800px wide or less, go from eight columns to two columns */
+    @media(max-width : 800px)  {
+
+
+        header nav{
+            display:flex;
+            flex-direction:row;
+            width:62.5%;
+        }
+        .header-image{
+            display:flex;
+            flex-direction:row;
+            width:62.5%;
+        }
+
+        .top-content{
+            display:flex;
+            flex-direction:column;
+           width:100%;
+        }
+        
+         .boxes{
+            display:flex;
+            flex-wrap: wrap;
+            flex-direction:column;
+            width:100%;
+        }
+        .box1, .box3, .box5, .box7, .box9{
+            display: flex;
+            flex-wrap:wrap;
+            
+           
+        }
+        .box2, .box4, .box6, .box8, .box10{
+            width:10%;
+        }
+
+        .bottom-content {
+            display: flex;
+            flex-wrap:wrap;
+            
+        }
+        #text-container{
+            display:flex;
+            flex-direction:wrap;
+        }
+
+      }
+              
+     
+
+
+/*Media queries*/
+
+    /* Styles */
+    
     
    
