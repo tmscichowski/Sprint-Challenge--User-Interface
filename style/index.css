@@ -28,9 +28,15 @@ article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
-body {
-	line-height: 1;
+/*General Styles*/
+html{
+    font-size:62.5%;
 }
+body {
+    line-height: 1;
+    
+}
+
 ol, ul {
 	list-style: none;
 }
@@ -65,7 +71,31 @@ h1, h2, h3, h4, h5 {
 p {
     line-height: 1.4;
 }
+/* Header Styles*/
+header {
+    width: 800px;
+    margin: 0 auto;
+   
+    
+}
 
+header nav{
+    width:800px;
+    display: flex;
+    justify-content:space-evenly;
+    flex-direction:row-reverse;
+    padding-bottom: 10%;
+    font-color: black ;
+}
+.header-image{
+    padding-bottom: 5% ;
+}
+#home {
+    display: flex;
+    align-items:flex-end;
+
+}
+/* End of Header */
 .container {
     width: 800px;
     margin: 0 auto;
@@ -103,14 +133,44 @@ p {
 
 .middle-content .boxes .box {
     width: 12.5%;
-    height: 100px;
-    background: black;
+    height: 100px;    
     margin: 20px 2.5%;
     color: white;
     display: flex;
     align-items: center;
     justify-content: center;
 }
+.box1{
+    background-color: teal;
+}
+.box2{
+    background-color: gold;
+}
+.box3{
+    background-color:cadetblue;
+}
+.box4{
+    background-color:coral;
+}
+.box5{
+    background-color:crimson;
+}
+.box6{
+    background-color:forestgreen;
+}
+.box7{
+    background-color: darkorchid;
+}
+.box8{
+    background-color:hotpink;
+}
+.box9{
+    background-color:indigo;
+}
+.box10{
+    background-color:dodgerblue;
+}
+
 
 .bottom-content {
     display: flex;
@@ -144,3 +204,103 @@ footer nav a {
     color: white;
     text-decoration: none;
 }
+/* Container for flexboxes */
+
+
+
+     /* On screens that are 500px wide or less, makea single column stacked. two columns to one*/
+     @media(max-width : 500px)  {
+
+
+        header nav{
+            display:flex;
+            flex-direction:row;
+            width:62.5%;
+        }
+        .header-image{
+            display:flex;
+            flex-direction:row;
+            width:62.5%;
+        }
+
+        .top-content{
+            display:flex;
+            flex-direction:column;
+           width:100%;
+        }
+        
+         .boxes{
+            display:flex;
+            flex-direction:column;
+            width:100%;
+        }
+        .bottom-content {
+            display: flex;
+            flex-wrap:wrap;
+            
+        }
+        #text-container{
+            display:flex;
+            flex-direction:wrap;
+        }
+
+      }
+                                             
+    /* On screens that are 800px wide or less, go from eight columns to two columns */
+    @media(max-width : 800px)  {
+
+
+        header nav{
+            display:flex;
+            flex-direction:row;
+            width:62.5%;
+        }
+        .header-image{
+            display:flex;
+            flex-direction:row;
+            width:62.5%;
+        }
+
+        .top-content{
+            display:flex;
+            flex-direction:column;
+           width:100%;
+        }
+        
+         .boxes{
+            display:flex;
+            flex-wrap: wrap;
+            flex-direction:column;
+            width:100%;
+        }
+        .box1, .box3, .box5, .box7, .box9{
+            display: flex;
+            flex-wrap:wrap;
+            
+           
+        }
+        .box2, .box4, .box6, .box8, .box10{
+            width:10%;
+        }
+
+        .bottom-content {
+            display: flex;
+            flex-wrap:wrap;
+            
+        }
+        #text-container{
+            display:flex;
+            flex-direction:wrap;
+        }
+
+      }
+              
+     
+
+
+/*Media queries*/
+
+    /* Styles */
+    
+    
+   
