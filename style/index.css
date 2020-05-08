@@ -139,7 +139,7 @@ header nav{
     background-color: teal;
 }
 .box2{
-    background-color: yellow;
+    background-color: gold;
 }
 .box3{
     background-color:cadetblue;
@@ -148,13 +148,13 @@ header nav{
     background-color:coral;
 }
 .box5{
-    background-color:red;
+    background-color:crimson;
 }
 .box6{
     background-color:forestgreen;
 }
 .box7{
-    background-color: purple;
+    background-color: darkorchid;
 }
 .box8{
     background-color:hotpink;
@@ -199,3 +199,25 @@ footer nav a {
     color: white;
     text-decoration: none;
 }
+/* Container for flexboxes */
+.row {
+      display: flex;
+      flex-wrap: wrap;
+    }
+}
+     /* On screens that are 500px wide or less, makea single column stacked. two columns to one*/
+     @media screen and (max-width: 500px) {
+          .row {
+            display: flex;
+            flex-direction: column;
+          }
+        }
+    /* On screens that are 800px wide or less, go from eight columns to two columns */
+    @media screen and (max-width: 800px) {
+      .row {
+        display: flex;
+        flex-direction: column;
+      }
+    }
+    
+   
